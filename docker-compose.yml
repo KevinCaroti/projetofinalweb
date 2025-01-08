@@ -1,0 +1,6 @@
+services:
+  projetofinalweb:
+    image: ${DOCKER_REGISTRY-}projetofinalweb
+    build:
+      context: .
+      dockerfile: projetofinalweb/Dockerfile
