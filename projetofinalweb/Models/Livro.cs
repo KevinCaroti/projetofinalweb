@@ -9,16 +9,16 @@ namespace ProjetoFinalWeb.Models
         public int Id { get; set; }
 
         [Required]
-        public string Nome { get; set; }
+        public required string Nome { get; set; }
 
-        public string Autor { get; set; }
-        public string Sinopse { get; set; }
-        public decimal Preco { get; set; }
-        public string ISBN { get; set; }
-        public string Editora { get; set; }
-        public string Idioma { get; set; }
-        public string Tema { get; set; }
-        public string Dimensao { get; set; }
+        public required string Autor { get; set; }
+        public required string Sinopse { get; set; }
+        public required decimal Preco { get; set; }
+        public required string ISBN { get; set; }
+        public required string Editora { get; set; }
+        public required string Idioma { get; set; }
+        public required string Tema { get; set; }
+        public required string Dimensao { get; set; }
         public bool Disponivel { get; set; }
     }
     public class Encomenda
@@ -30,13 +30,13 @@ namespace ProjetoFinalWeb.Models
         public int LivroId { get; set; }
 
         [ForeignKey("LivroId")]
-        public Livro Livro { get; set; } // Relacionamento com o modelo Livro
+        public required Livro Livro { get; set; } // Relacionamento com o modelo Livro
 
         [Required]
-        public string NomeUtilizador { get; set; }
+        public required string NomeUtilizador { get; set; }
 
         [Required]
-        public string MoradaEnvio { get; set; }
+        public required string MoradaEnvio { get; set; }
 
         [Required]
         public string Estado { get; set; } = "Pendente"; // Estado da encomenda: Pendente ou Satisfeita

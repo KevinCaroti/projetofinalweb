@@ -12,8 +12,8 @@ using projetofinalweb.Data;
 namespace projetofinalweb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250109122601_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250109131527_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
