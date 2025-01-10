@@ -13,5 +13,6 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=YourStrong@Passw0rd
       - MSSQL_TCP_PORT=1433
+      - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "1433:1433"
