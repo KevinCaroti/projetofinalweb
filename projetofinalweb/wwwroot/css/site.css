@@ -25,3 +25,26 @@ body {
   border-radius: 20px;
   color: black
 }
+
+button{
+    border-radius: 20px;
+    background-color: white;
+}
+
+button:hover{
+    background-color: lawngreen;
+}
+
+h3, button, p{
+    font-family: Arial;
+    margin-top: 10px;
+}
+
+.col-md-4 img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoomed {
+    transform: scale(1.2);
+}
